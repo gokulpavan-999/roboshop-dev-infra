@@ -1,10 +1,11 @@
 terraform {
   required_providers {
     aws = {
-      source = "hashicorp/aws"
-      version = "6.16.0"
+      source  = "hashicorp/aws"
+      version = ">= 3.0"
     }
   }
+
 
   backend "s3" {
     bucket = "remote-state-pavan-dev"
