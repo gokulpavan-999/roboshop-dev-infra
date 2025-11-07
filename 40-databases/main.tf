@@ -156,7 +156,7 @@ connection {
   type        = "ssh"
   user        = "ec2-user"
   private_key = file("~/.ssh/roboshop-key.pem")
-  host        = self.private_ip
+  host        = aws_instance.mysql.private_ip
 }
 
   # terraform copies this file to mongodb server
