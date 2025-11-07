@@ -152,7 +152,6 @@ resource "terraform_data" "mysql" {
     host     = aws_instance.mysql.private_ip
   }
 
-
   # terraform copies this file to mongodb server
   provisioner "file" {
     source = "bootstrap.sh"
