@@ -88,4 +88,4 @@ resource "aws_security_group_rule" "frontend_alb_public" {
   from_port         = 443
   protocol          = "tcp"
   to_port           = 443
-
+}
