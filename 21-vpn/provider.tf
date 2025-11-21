@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket = "remote-state-pavan-dev"
-    key    = "roboshop-dev-bastion"
+    key    = "roboshop-dev-vpn"
     region = "us-east-1"
     use_lockfile = true
     encrypt = true
@@ -16,4 +16,5 @@ terraform {
 }
 
 provider "aws" {
-  rererererereroboshop-dev-baassttiio
+  region = "us-east-1"
+}
